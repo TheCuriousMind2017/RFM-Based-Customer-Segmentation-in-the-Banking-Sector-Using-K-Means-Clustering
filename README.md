@@ -39,14 +39,31 @@ source venv/bin/activate
 3. Install dependencies:
 pip install -r requirements.txt
 
-🚀 Pipeline Execution Sequence
-Execute the modules in the exact sequential order defined below:
+4. Create a data folder named "data" inside the project folder, and copy paste the csv file I have shared with you.
 
+5. Pipeline Execution Sequence
 python 01_rfm_aggregation.py
 python 02_kmeans_clustering.py
 python 03_assign_clusters.py
 python 04_spatial_visualization.py
 python 05_pairplot_matrix.py
+
+Once all the scripts are run, the project structure should look like:
+ARM-Demo/
+├── data/
+│   ├── bank_transactions.csv   # Raw source transactional dataset
+│   └── processed/
+│       ├── final_bank_segments.csv # Labeled customer profiles
+│       └── rfm_scaled.csv          # Isotropic standardized feature space
+├── venv/                       # Isolated virtual environment
+├── 01_rfm_aggregation.py       # Date parsing, feature aggregation, and scaling
+├── 02_cluster_optimization.py  # Dual-axis elbow evaluation (WCSS vs. Silhouette)
+├── 03_assign_clusters.py       # Final model training and cluster extraction
+├── 04_spatial_visualization.py # Interactive 3D Plotly visualization generation
+├── 05_pairplot_matrix.py       # Publication-grade 2D Seaborn pairplots
+├── .gitignore                  # Git tracking exclusion rule-set
+└── requirements.txt            # Project dependencies
+
 
 📊 Analytical MethodologyFeature Engineering: Constructs Recency (days since last transaction), Frequency (total transaction volume), and Monetary (aggregate transaction amount in INR) matrices aggregated per customer ID.Normalization: Heavy financial distribution right-skewness is treated using a non-linear $log(x + 1)$ mapping to establish symmetric data distributions.Isotropic Scaling: Features are standardized using a Z-score scaler (StandardScaler) to eliminate distance matrix bias during multidimensional K-Means Euclidean space routing.Hyperparameter Optimization: Employs the dual-validation intersection of Within-Cluster Sum of Squares (Inertia) and Silhouette Analysis to select $K=5$ as the optimal configuration.
 
