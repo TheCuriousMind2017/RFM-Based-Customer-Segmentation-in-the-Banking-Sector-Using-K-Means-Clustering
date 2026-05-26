@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Data Files (Crucial to prevent tracking 880k rows)
+data/
+*.png
+*.html
+
+# IDE Settings
+.vscode/
+.idea/
