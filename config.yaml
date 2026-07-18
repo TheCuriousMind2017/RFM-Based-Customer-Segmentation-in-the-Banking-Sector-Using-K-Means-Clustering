@@ -1,4 +1,4 @@
-# Banking RFM K-Means pipeline - default configuration (stages 1-4)
+﻿# Banking RFM K-Means pipeline - default configuration (stages 1-4)
 # Override any field here; unknown keys are rejected so typos fail loudly.
 
 dataset_slug: "shivamb/bank-customer-segmentation"
