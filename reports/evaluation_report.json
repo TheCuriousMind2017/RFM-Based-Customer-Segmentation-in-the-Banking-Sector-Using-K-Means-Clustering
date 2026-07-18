@@ -1,0 +1,85 @@
+{
+  "operating_point": {
+    "transform": "power_yeojohnson",
+    "k": 5
+  },
+  "cluster_sizes": {
+    "0": 182954,
+    "1": 189826,
+    "2": 143389,
+    "3": 176026,
+    "4": 191465
+  },
+  "gap_statistic": {
+    "k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "gap": [
+      0.7902639722300417,
+      0.9653375266676694,
+      1.0244126101553181,
+      1.0321638863745157,
+      0.9786796135739273,
+      1.0063770931130112,
+      1.0418432064402108,
+      1.0993569642984617,
+      1.1447396193398998
+    ],
+    "s_k": [
+      0.001584618390635223,
+      0.0027039192221725242,
+      0.0053519057918027906,
+      0.002309463029457037,
+      0.002055446848581099,
+      0.002347586212641937,
+      0.0026385412345071913,
+      0.0017341300654036566,
+      0.002002484013594541
+    ],
+    "gap_choice": 5
+  },
+  "gmm_shape": {
+    "bic": {
+      "spherical": 358413.63271274767,
+      "diag": -254709.2141955893,
+      "full": -255002.81897982804
+    },
+    "best_covariance": "full",
+    "verdict": "data favours elliptical structure (K-Means limited)"
+  },
+  "rfm_agreement": {
+    "ari": 0.32892557960345664,
+    "nmi": 0.5344425153357686,
+    "frequency_score_distribution": {
+      "1": 740240,
+      "5": 143420
+    }
+  },
+  "feature_contribution": {
+    "Recency": 0.3032,
+    "Frequency": 0.4097,
+    "Monetary": 0.2871
+  },
+  "leave_f_out": {
+    "ari_full_vs_RM": 0.5232493821557317,
+    "note": "high ARI => Frequency barely changes assignments"
+  },
+  "cross_transform_at_k": {
+    "log_standard": {
+      "silhouette": 0.3729369899104277,
+      "role": "baseline"
+    },
+    "quantile_normal": {
+      "silhouette": 0.411725379979767,
+      "role": "robustness"
+    }
+  }
+}

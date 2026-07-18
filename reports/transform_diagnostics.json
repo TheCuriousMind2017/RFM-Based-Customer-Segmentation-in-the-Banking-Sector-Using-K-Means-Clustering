@@ -1,0 +1,189 @@
+{
+  "_features": [
+    "Recency",
+    "Frequency",
+    "Monetary"
+  ],
+  "_raw_space": {
+    "per_feature": {
+      "Recency": {
+        "skew": -0.2277088200197255,
+        "kurtosis_excess": -0.4577545327843531,
+        "std": 15.226258793506535
+      },
+      "Frequency": {
+        "skew": 2.6028397619351296,
+        "kurtosis_excess": 7.5082343457880825,
+        "std": 0.4505266328221391
+      },
+      "Monetary": {
+        "skew": 42.82163228851804,
+        "kurtosis_excess": 5454.052179084525,
+        "std": 7209.50698345803
+      }
+    },
+    "mean_abs_skew": 15.217393623490965,
+    "mean_abs_kurtosis": 1820.672722654366,
+    "max_abs_offdiag_corr": 0.2237680585430681
+  },
+  "transformers": {
+    "log_standard": {
+      "per_feature": {
+        "Recency": {
+          "skew": -3.7168147627387387,
+          "kurtosis_excess": 31.09971136830942,
+          "std": 0.9999999999999999
+        },
+        "Frequency": {
+          "skew": 2.194555781512864,
+          "kurtosis_excess": 3.8909194272328573,
+          "std": 1.0
+        },
+        "Monetary": {
+          "skew": -0.18335944322392375,
+          "kurtosis_excess": 0.4748217989188177,
+          "std": 1.0
+        }
+      },
+      "mean_abs_skew": 2.031576662491842,
+      "mean_abs_kurtosis": 11.821817531487033,
+      "max_abs_offdiag_corr": 0.2850533162305138
+    },
+    "power_yeojohnson": {
+      "per_feature": {
+        "Recency": {
+          "skew": -0.08744257409440351,
+          "kurtosis_excess": -0.7669354028444952,
+          "std": 1.0
+        },
+        "Frequency": {
+          "skew": 1.8317001672618702,
+          "kurtosis_excess": 1.3551419665069098,
+          "std": 0.9999999999999998
+        },
+        "Monetary": {
+          "skew": 0.0074407722172661695,
+          "kurtosis_excess": 0.4369939746861413,
+          "std": 1.0
+        }
+      },
+      "mean_abs_skew": 0.6421945045245133,
+      "mean_abs_kurtosis": 0.8530237813458488,
+      "max_abs_offdiag_corr": 0.28142264761421676
+    },
+    "quantile_normal": {
+      "per_feature": {
+        "Recency": {
+          "skew": 0.8458723627332121,
+          "kurtosis_excess": 5.445787459111967,
+          "std": 1.1844212234170466
+        },
+        "Frequency": {
+          "skew": 1.84607901641791,
+          "kurtosis_excess": 1.4386235665334954,
+          "std": 2.458857533936398
+        },
+        "Monetary": {
+          "skew": 0.014736729701053839,
+          "kurtosis_excess": -0.0685000781364482,
+          "std": 0.9973772064512167
+        }
+      },
+      "mean_abs_skew": 0.902229369617392,
+      "mean_abs_kurtosis": 2.3176370345939703,
+      "max_abs_offdiag_corr": 0.28872397416090323
+    },
+    "log_robust": {
+      "per_feature": {
+        "Recency": {
+          "skew": -3.716814762738737,
+          "kurtosis_excess": 31.099711368309407,
+          "std": 0.7919763495735024
+        },
+        "Frequency": {
+          "skew": 2.1945557815128645,
+          "kurtosis_excess": 3.8909194272328573,
+          "std": 0.17009404143687618
+        },
+        "Monetary": {
+          "skew": -0.1833594432239236,
+          "kurtosis_excess": 0.4748217989188168,
+          "std": 0.7979954957084523
+        }
+      },
+      "mean_abs_skew": 2.0315766624918417,
+      "mean_abs_kurtosis": 11.821817531487028,
+      "max_abs_offdiag_corr": 0.28505331623051106
+    },
+    "minmax": {
+      "per_feature": {
+        "Recency": {
+          "skew": -0.22770882001972598,
+          "kurtosis_excess": -0.4577545327843522,
+          "std": 0.18797850362353744
+        },
+        "Frequency": {
+          "skew": 2.60283976193513,
+          "kurtosis_excess": 7.508234345788084,
+          "std": 0.09010532656442784
+        },
+        "Monetary": {
+          "skew": 42.821632288518025,
+          "kurtosis_excess": 5454.052179084523,
+          "std": 0.004621375210098194
+        }
+      },
+      "mean_abs_skew": 15.217393623490961,
+      "mean_abs_kurtosis": 1820.6727226543653,
+      "max_abs_offdiag_corr": 0.22376805854306764
+    },
+    "rfm_score": {
+      "per_feature": {
+        "Recency": {
+          "skew": -0.05454452731510858,
+          "kurtosis_excess": -1.2850162947951533,
+          "std": 1.4053956014591236
+        },
+        "Frequency": {
+          "skew": 1.8316910976129692,
+          "kurtosis_excess": 1.3550922770746032,
+          "std": 1.4749113865147399
+        },
+        "Monetary": {
+          "skew": 0.001046187408238629,
+          "kurtosis_excess": -1.3007122487190808,
+          "std": 1.4143874718367135
+        }
+      },
+      "mean_abs_skew": 0.6290939374454388,
+      "mean_abs_kurtosis": 1.313606940196279,
+      "max_abs_offdiag_corr": 0.28822806032656584
+    }
+  },
+  "ranking_by_mean_abs_skew": [
+    {
+      "transformer": "rfm_score",
+      "mean_abs_skew": 0.6291
+    },
+    {
+      "transformer": "power_yeojohnson",
+      "mean_abs_skew": 0.6422
+    },
+    {
+      "transformer": "quantile_normal",
+      "mean_abs_skew": 0.9022
+    },
+    {
+      "transformer": "log_robust",
+      "mean_abs_skew": 2.0316
+    },
+    {
+      "transformer": "log_standard",
+      "mean_abs_skew": 2.0316
+    },
+    {
+      "transformer": "minmax",
+      "mean_abs_skew": 15.2174
+    }
+  ]
+}

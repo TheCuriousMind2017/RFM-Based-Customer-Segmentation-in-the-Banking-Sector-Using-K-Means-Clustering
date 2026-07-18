@@ -1,0 +1,19 @@
+{
+  "best_k_by_silhouette": [
+    {
+      "transform": "log_standard",
+      "k": 2,
+      "silhouette": 0.5200978551681609
+    },
+    {
+      "transform": "power_yeojohnson",
+      "k": 2,
+      "silhouette": 0.4941819864022492
+    },
+    {
+      "transform": "quantile_normal",
+      "k": 2,
+      "silhouette": 0.7440299494411208
+    }
+  ]
+}

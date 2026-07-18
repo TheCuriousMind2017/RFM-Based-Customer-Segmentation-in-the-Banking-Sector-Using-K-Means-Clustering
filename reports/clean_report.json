@@ -1,0 +1,28 @@
+{
+  "n_raw": 1048567,
+  "dropped": {
+    "missing_rfm_core": 0,
+    "nonpositive_amount": 835,
+    "duplicate_txn_id": 0
+  },
+  "imputed": {
+    "gender_mode": 1100,
+    "location_token": 151,
+    "balance_zero": 2364
+  },
+  "repaired": {
+    "dob_now_missing": 60744,
+    "dob_raw_missing": 3397
+  },
+  "temporal_anchor": "2016-10-21 00:00:00",
+  "missing_raw": {
+    "CustomerID": 0,
+    "CustGender": 1100,
+    "CustLocation": 151,
+    "CustAccountBalance": 2369,
+    "TransactionDate": 0,
+    "TransactionAmount (INR)": 0
+  },
+  "n_clean": 1047732,
+  "retained_fraction": 0.9992
+}

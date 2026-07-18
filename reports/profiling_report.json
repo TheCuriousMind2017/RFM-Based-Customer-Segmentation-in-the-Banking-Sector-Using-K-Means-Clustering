@@ -1,0 +1,136 @@
+{
+  "operating_point": {
+    "transform": "power_yeojohnson",
+    "k": null
+  },
+  "n_customers": 883660,
+  "personas": [
+    {
+      "cluster": 0,
+      "persona": "Low-Value Dormant",
+      "action": "Automated retention or sunset",
+      "size": 182954,
+      "share": 0.207,
+      "median_recency_days": 70.0,
+      "median_frequency": 1.0,
+      "median_monetary_inr": 154.0,
+      "recency_band": "dormant",
+      "monetary_band": "low",
+      "frequency_profile": "mostly one-time"
+    },
+    {
+      "cluster": 1,
+      "persona": "Mainstream Core",
+      "action": "Standard engagement and nurture",
+      "size": 189826,
+      "share": 0.2148,
+      "median_recency_days": 46.0,
+      "median_frequency": 1.0,
+      "median_monetary_inr": 1150.0,
+      "recency_band": "mid",
+      "monetary_band": "mid",
+      "frequency_profile": "mostly one-time"
+    },
+    {
+      "cluster": 2,
+      "persona": "High-Value Core",
+      "action": "Deepen relationship, protect share of wallet",
+      "size": 143389,
+      "share": 0.1623,
+      "median_recency_days": 47.0,
+      "median_frequency": 2.0,
+      "median_monetary_inr": 1426.0,
+      "recency_band": "mid",
+      "monetary_band": "high",
+      "frequency_profile": "repeat"
+    },
+    {
+      "cluster": 3,
+      "persona": "Mainstream Active",
+      "action": "Cross-sell, grow share of wallet",
+      "size": 176026,
+      "share": 0.1992,
+      "median_recency_days": 45.0,
+      "median_frequency": 1.0,
+      "median_monetary_inr": 154.0,
+      "recency_band": "recent",
+      "monetary_band": "mid",
+      "frequency_profile": "mostly one-time"
+    },
+    {
+      "cluster": 4,
+      "persona": "High-Value At-Risk",
+      "action": "Priority win-back / relationship outreach",
+      "size": 191465,
+      "share": 0.2167,
+      "median_recency_days": 71.0,
+      "median_frequency": 1.0,
+      "median_monetary_inr": 1163.6,
+      "recency_band": "dormant",
+      "monetary_band": "high",
+      "frequency_profile": "mostly one-time"
+    }
+  ],
+  "profile_medians": [
+    {
+      "cluster": 0,
+      "Recency": 70.0,
+      "Frequency": 1.0,
+      "Monetary": 154.0,
+      "MonetaryMean": 154.0,
+      "Tenure": 0.0,
+      "LastAccountBalance": 10791.41,
+      "DominantHour": 16.0,
+      "size": 182954,
+      "share": 0.207
+    },
+    {
+      "cluster": 1,
+      "Recency": 46.0,
+      "Frequency": 1.0,
+      "Monetary": 1150.0,
+      "MonetaryMean": 1150.0,
+      "Tenure": 0.0,
+      "LastAccountBalance": 26314.12,
+      "DominantHour": 17.0,
+      "size": 189826,
+      "share": 0.215
+    },
+    {
+      "cluster": 2,
+      "Recency": 47.0,
+      "Frequency": 2.0,
+      "Monetary": 1426.0,
+      "MonetaryMean": 666.0,
+      "Tenure": 16.0,
+      "LastAccountBalance": 16820.92,
+      "DominantHour": 13.0,
+      "size": 143389,
+      "share": 0.162
+    },
+    {
+      "cluster": 3,
+      "Recency": 45.0,
+      "Frequency": 1.0,
+      "Monetary": 154.0,
+      "MonetaryMean": 154.0,
+      "Tenure": 0.0,
+      "LastAccountBalance": 11239.49,
+      "DominantHour": 16.0,
+      "size": 176026,
+      "share": 0.199
+    },
+    {
+      "cluster": 4,
+      "Recency": 71.0,
+      "Frequency": 1.0,
+      "Monetary": 1163.6,
+      "MonetaryMean": 1163.6,
+      "Tenure": 0.0,
+      "LastAccountBalance": 25324.55,
+      "DominantHour": 17.0,
+      "size": 191465,
+      "share": 0.217
+    }
+  ]
+}

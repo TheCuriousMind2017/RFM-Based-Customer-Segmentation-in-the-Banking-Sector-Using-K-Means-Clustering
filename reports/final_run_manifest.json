@@ -1,0 +1,13 @@
+{
+  "operating_point": {
+    "transform": "power_yeojohnson",
+    "k": null
+  },
+  "random_seed": 42,
+  "outputs": {
+    "personas_csv": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\reports\\cluster_personas.csv",
+    "customer_segments": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\data\\processed\\clusters\\customer_segments.parquet",
+    "profiling_report": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\reports\\profiling_report.json",
+    "bundle": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\models\\final_model_bundle.joblib"
+  }
+}

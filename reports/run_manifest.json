@@ -1,0 +1,44 @@
+{
+  "started_at": "2026-06-29T05:14:57",
+  "finished_at": "2026-06-29T05:16:26",
+  "random_seed": 42,
+  "config": {
+    "dataset_slug": "shivamb/bank-customer-segmentation",
+    "local_csv": null,
+    "project_root": ".",
+    "raw_dir": "data/raw",
+    "interim_dir": "data/interim",
+    "processed_dir": "data/processed",
+    "reports_dir": "reports",
+    "random_seed": 42,
+    "min_birth_year": 1920,
+    "drop_nonpositive_amount": true,
+    "impute_gender_mode": true,
+    "impute_location_token": "UNKNOWN",
+    "fill_balance_zero": true,
+    "min_frequency": 2,
+    "degeneracy_warn_threshold": 0.5,
+    "eda_auto_filter": false,
+    "make_figures": true,
+    "snapshot_date": null,
+    "include_extra_features": true,
+    "force": false
+  },
+  "raw": {
+    "source": "kaggle:shivamb/bank-customer-segmentation",
+    "snapshot": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\data\\raw\\bank_transactions.csv",
+    "sha256": "2a15a0742aa766b797049572d4c56956a259381eab270ea2e7d195d2536ec7b6",
+    "n_rows": 1048567,
+    "downloaded_at": "2026-06-29T05:15:07"
+  },
+  "outputs": {
+    "clean": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\data\\interim\\clean.parquet",
+    "rfm": "C:\\Users\\Paul\\Desktop\\ARM_Pipeline\\data\\processed\\rfm_customer.parquet"
+  },
+  "eda_gate": {
+    "frequency_degeneracy_flag": true,
+    "auto_filter_enabled": false,
+    "recommendation": "Frequency is near-degenerate: most customers transact rarely, so the F dimension carries little separating signal. Decide before modeling whether to (a) keep low-frequency customers, (b) filter to >= min_frequency, or (c) substitute/augment F with another feature."
+  },
+  "n_customers": 883660
+}

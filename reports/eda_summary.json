@@ -1,0 +1,56 @@
+{
+  "n_transactions": 1047732,
+  "n_customers": 883660,
+  "distribution": {
+    "TransactionAmount (INR)": {
+      "n": 1047732,
+      "mean": 1575.589684738082,
+      "median": 460.0,
+      "std": 6577.212081557804,
+      "min": 0.01,
+      "max": 1560034.99,
+      "skew": 47.32101461853979,
+      "kurtosis_excess": 6637.226695392511,
+      "outliers_1_5_iqr": 112209,
+      "outliers_3_iqr": 67194,
+      "outlier_pct_1_5_iqr": 10.71
+    },
+    "CustAccountBalance": {
+      "n": 1047732,
+      "mean": 115054.40447320497,
+      "median": 16704.69,
+      "std": 845220.8140757584,
+      "min": 0.0,
+      "max": 115035495.1,
+      "skew": 60.682537351114675,
+      "kurtosis_excess": 5855.762308278105,
+      "outliers_1_5_iqr": 141002,
+      "outliers_3_iqr": 98124,
+      "outlier_pct_1_5_iqr": 13.46
+    }
+  },
+  "frequency": {
+    "mean_txn_per_customer": 1.186,
+    "median_txn_per_customer": 1.0,
+    "max_txn_per_customer": 6,
+    "share_single_transaction": 0.8377,
+    "share_below_min_frequency": 0.8377,
+    "min_frequency_threshold": 2,
+    "quantiles": {
+      "0.5": 1.0,
+      "0.9": 2.0,
+      "0.99": 3.0
+    }
+  },
+  "missing_clean": {
+    "CustGender": 0,
+    "CustLocation": 0,
+    "CustomerDOB": 60622,
+    "Age": 60622
+  },
+  "gate": {
+    "frequency_degeneracy_flag": true,
+    "auto_filter_enabled": false,
+    "recommendation": "Frequency is near-degenerate: most customers transact rarely, so the F dimension carries little separating signal. Decide before modeling whether to (a) keep low-frequency customers, (b) filter to >= min_frequency, or (c) substitute/augment F with another feature."
+  }
+}

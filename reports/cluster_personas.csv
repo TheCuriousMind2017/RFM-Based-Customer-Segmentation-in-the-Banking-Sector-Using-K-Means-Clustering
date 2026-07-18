@@ -1,0 +1,6 @@
+cluster,persona,action,size,share,median_recency_days,median_frequency,median_monetary_inr,recency_band,monetary_band,frequency_profile
+2,High-Value Core,"Deepen relationship, protect share of wallet",143389,0.1623,47.0,2.0,1426.0,mid,high,repeat
+4,High-Value At-Risk,Priority win-back / relationship outreach,191465,0.2167,71.0,1.0,1163.6,dormant,high,mostly one-time
+1,Mainstream Core,Standard engagement and nurture,189826,0.2148,46.0,1.0,1150.0,mid,mid,mostly one-time
+0,Low-Value Dormant,Automated retention or sunset,182954,0.207,70.0,1.0,154.0,dormant,low,mostly one-time
+3,Mainstream Active,"Cross-sell, grow share of wallet",176026,0.1992,45.0,1.0,154.0,recent,mid,mostly one-time

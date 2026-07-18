@@ -1,0 +1,30 @@
+{
+  "snapshot_date": "2016-10-22 00:00:00",
+  "n_customers": 883660,
+  "validation": {
+    "recency_negative": 0,
+    "frequency_lt_1": 0,
+    "monetary_nonpositive": 0,
+    "any_null_core": 0
+  },
+  "summary": {
+    "Recency": {
+      "mean": 56.30699137677387,
+      "median": 56.0,
+      "min": 1.0,
+      "max": 82.0
+    },
+    "Frequency": {
+      "mean": 1.1856732227327254,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 6.0
+    },
+    "Monetary": {
+      "mean": 1868.1344992078402,
+      "median": 538.0,
+      "min": 0.01,
+      "max": 1560034.99
+    }
+  }
+}

@@ -1,0 +1,69 @@
+# Banking RFM K-Means pipeline - default configuration (stages 1-4)
+# Override any field here; unknown keys are rejected so typos fail loudly.
+
+dataset_slug: "shivamb/bank-customer-segmentation"
+# To run offline / reproducibly, point this at an already-downloaded CSV:
+# local_csv: "data/raw/bank_transactions.csv"
+local_csv: null
+
+project_root: "."
+raw_dir: "data/raw"
+interim_dir: "data/interim"
+processed_dir: "data/processed"
+reports_dir: "reports"
+
+random_seed: 42
+
+# Stage 2 - cleaning policy
+min_birth_year: 1920
+drop_nonpositive_amount: true
+impute_gender_mode: true
+impute_location_token: "UNKNOWN"
+fill_balance_zero: true
+
+# Stage 3 - EDA gate
+min_frequency: 2
+degeneracy_warn_threshold: 0.5
+eda_auto_filter: false      # report + flag only; filtering is a manual decision
+make_figures: true
+
+# Stage 4 - RFM features
+snapshot_date: null         # null -> max(TransactionDate) + 1 day
+include_extra_features: true
+
+# Stage 5 - transform / normalization (swappable)
+feature_columns: ["Recency", "Frequency", "Monetary"]
+transformers:
+  - log_standard          # proposal baseline (log1p + z-score)
+  - power_yeojohnson      # targets Gaussianity directly
+  - quantile_normal       # rank->normal; immune to tail magnitude
+  - log_robust            # log1p + median/IQR
+  - minmax                # plain min-max (weak on skew; comparator)
+  - rfm_score             # canonical 1-5 RFM scoring (bounded ordinal)
+winsorize: false
+winsorize_limits: [0.01, 0.99]
+transformed_dir: "data/processed/transformed"
+models_dir: "models"
+plot_sample: 20000
+
+# Stage 6 - clustering sweep
+cluster_transformers: ["power_yeojohnson", "log_standard", "quantile_normal"]
+k_min: 2
+k_max: 10
+kmeans_n_init: 10
+kmeans_max_iter: 300
+silhouette_sample: 20000
+clusters_dir: "data/processed/clusters"
+
+# Stage 7 - evaluation scorecard
+primary_transform: "power_yeojohnson"
+baseline_transform: "log_standard"
+robustness_transform: "quantile_normal"
+rfm_reference: "rfm_score"
+selected_k: null            # null -> auto-pick by silhouette within primary transform
+gap_b: 10
+gap_subsample: 50000
+eval_subsample: 50000
+gmm_covariances: ["spherical", "diag", "full"]
+
+force: false
