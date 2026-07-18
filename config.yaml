@@ -60,7 +60,9 @@ primary_transform: "power_yeojohnson"
 baseline_transform: "log_standard"
 robustness_transform: "quantile_normal"
 rfm_reference: "rfm_score"
-selected_k: null            # null -> auto-pick by silhouette within primary transform
+selected_k: 5               # fixed: four measures (elbow, CH, DB, gap) converge on K=5.
+                            # Leave null only to auto-pick by silhouette, which favours
+                            # the degenerate K=2 split and does NOT reproduce the paper.
 gap_b: 10
 gap_subsample: 50000
 eval_subsample: 50000
